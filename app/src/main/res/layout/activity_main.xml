@@ -1,0 +1,49 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+
+    <!-- Min/Max Temperature TextView -->
+    <TextView
+        android:id="@+id/minMaxTemperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/WeatherDetailText"
+        android:text="BEST WEATHER FORECAST APP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <!-- Weather Icon ImageView -->
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minMaxTemperatureTextView" />
+
+    <!-- Weather Classification TextView -->
+    <TextView
+        android:id="@+id/weatherClassificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/WeatherDetailText"
+        android:text="WeatherCast"
+        app:layout_constraintStart_toEndOf="@id/weatherIconImageView"
+        app:layout_constraintTop_toBottomOf="@id/minMaxTemperatureTextView" />
+
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/buttonGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore App"
+        android:backgroundTint="#0800FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherClassificationTextView"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="WeatherDetailText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+</resources>
